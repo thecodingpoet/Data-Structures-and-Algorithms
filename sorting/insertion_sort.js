@@ -9,6 +9,3 @@ const insertionSort = nums => {
   }
   return nums;
 }
-
-var arr = [1, 0, 3, 5, 2]
-console.log(insertionSort(arr), 'array')

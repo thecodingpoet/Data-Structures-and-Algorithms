@@ -24,5 +24,3 @@ const merge = (left, right) => {
   return results.concat(left, right)
 }
 
-var arr = [1, 0, 3, 5, 2]
-console.log(arr, mergeSort(arr), 'array')

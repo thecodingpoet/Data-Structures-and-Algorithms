@@ -13,6 +13,3 @@ const bubbleSort = nums => {
     }
   } while(swapped);
 }
-
-var arr = [1, 0, 3, 5, 2]
-console.log(bubbleSort(arr), 'array')
