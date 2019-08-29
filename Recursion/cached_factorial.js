@@ -2,18 +2,12 @@ const factorial = () => {
   const cache = {}
 
   return (n) => {
-    if (n == 1) {
-      return 1
-    } else {
-      if (n in cache) {
-        return cache[n]
-      } else {
-        const cachedFactorial = cache[n-1] || factorial()(n-1) 
-        result = n * cachedFactorial
-        cache[n] = result
-        return result
-      }
-    }
+    if (n == 1) return 1
+    if (n in cache) return cache[n]
+    const cachedFactorial = cache[n-1] || factorial()(n-1) 
+    result = n * cachedFactorial
+    cache[n] = result
+    return result
   }
 }
 
