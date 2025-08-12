@@ -18,8 +18,8 @@ class UnionFind {
   }
 
   union(x, y) {
-    let px = this.find(x)
-    let py = this.find(y)
+    const px = this.find(x)
+    const py = this.find(y)
 
     if (px == py) return false
 
@@ -41,4 +41,4 @@ uf.union(0, 1);
 uf.union(1, 2);
 
 console.log(uf.union(0, 2)) // False - cycle detected
-console.log(uf.find(1))
+console.log(uf.find(1)) // 0
